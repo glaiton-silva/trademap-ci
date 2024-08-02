@@ -139,6 +139,10 @@ button {
 }
 
 button#addModal {
+    background-color: #28a745;
+}
+
+.btn_absolute {
     position: absolute;
 }
 

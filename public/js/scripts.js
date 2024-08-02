@@ -5,7 +5,9 @@ new Vue({
         showModal: false, // Controle de exibição do modal
         currentPhone: {}, // Telefone atualmente sendo adicionado ou editado
         isEditing: false, // Flag para determinar se estamos no modo de edição
-        modalTitle: "Edit Phone Data" // Título do modal
+        modalTitle: "Editar Dados do Telefone", // Título do modal
+        sortKey: '', // A chave atual de ordenação
+        sortOrder: 1 // Ordem de ordenação: 1 para crescente, -1 para decrescente
     },
     created() {
         this.fetchData(); // Carrega os dados dos telefones ao criar a instância Vue
@@ -23,7 +25,7 @@ new Vue({
                     this.createChart();
                 })
                 .catch(error => {
-                    console.error("There was an error fetching the data:", error);
+                    console.error("Houve um erro ao buscar os dados:", error);
                 });
         },
 
@@ -102,7 +104,7 @@ new Vue({
          * Abre o modal para adicionar um novo telefone.
          */
         openAddModal() {
-            this.modalTitle = "Add Phone Data";
+            this.modalTitle = "Adicionar Dados do Telefone";
             this.currentPhone = { name: '', sales: 0, growth: 0 };
             this.showModal = true;
             this.isEditing = false;
@@ -114,7 +116,7 @@ new Vue({
          * @param {Object} phone - Dados do telefone a ser editado.
          */
         openEditModal(phone) {
-            this.modalTitle = "Edit Phone Data";
+            this.modalTitle = "Editar Dados do Telefone";
             this.currentPhone = Object.assign({}, phone);
             this.showModal = true;
             this.isEditing = true;
@@ -139,7 +141,7 @@ new Vue({
                         this.closeModal();
                     })
                     .catch(error => {
-                        console.error("There was an error updating the data:", error);
+                        console.error("Houve um erro ao atualizar os dados:", error);
                     });
             } else {
                 axios.post('/addPhone', this.currentPhone)
@@ -148,7 +150,7 @@ new Vue({
                         this.closeModal();
                     })
                     .catch(error => {
-                        console.error("There was an error adding the data:", error);
+                        console.error("Houve um erro ao adicionar os dados:", error);
                     });
             }
         },
@@ -163,8 +165,24 @@ new Vue({
                     this.closeModal();
                 })
                 .catch(error => {
-                    console.error("There was an error deleting the data:", error);
+                    console.error("Houve um erro ao deletar os dados:", error);
                 });
+        },
+
+        /**
+         * Ordena os dados de acordo com a chave especificada (sales ou growth).
+         *
+         * @param {string} key - A chave para ordenar os dados (sales ou growth).
+         */
+        sortData(key) {
+            if (this.sortKey === key) {
+                this.sortOrder *= -1; // Alterna entre crescente e decrescente
+            } else {
+                this.sortKey = key;
+                this.sortOrder = 1; // Inicialmente crescente
+            }
+            this.phones.sort((a, b) => (a[key] - b[key]) * this.sortOrder);
+            this.createChart();
         }
     },
     beforeDestroy() {

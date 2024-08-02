@@ -26,9 +26,9 @@ class PhoneController extends ResourceController
         $data = $this->request->getJSON(true);
 
         if ($phoneModel->insert($data)) {
-            return $this->respond(['status' => 'success', 'message' => 'Phone added successfully']);
+            return $this->respond(['status' => 'success', 'message' => 'Telefone adicionado com sucesso']);
         } else {
-            return $this->fail('Failed to add phone');
+            return $this->fail('Falha ao adicionar o telefone');
         }
     }
 
@@ -43,9 +43,9 @@ class PhoneController extends ResourceController
         $phoneModel = new PhoneModel();
 
         if ($phoneModel->delete($id)) {
-            return $this->respond(['status' => 'success', 'message' => 'Phone deleted successfully']);
+            return $this->respond(['status' => 'success', 'message' => 'Telefone deletado com sucesso']);
         } else {
-            return $this->fail('Failed to delete phone');
+            return $this->fail('Falha ao deletar o telefone');
         }
     }
 
@@ -61,9 +61,9 @@ class PhoneController extends ResourceController
         $data = $this->request->getJSON(true);
 
         if ($phoneModel->update($id, $data)) {
-            return $this->respond(['status' => 'success', 'message' => 'Phone data updated successfully']);
+            return $this->respond(['status' => 'success', 'message' => 'Dados do telefone atualizados com sucesso']);
         } else {
-            return $this->fail('Failed to update phone data');
+            return $this->fail('Falha ao atualizar os dados do telefone');
         }
     }
 }
