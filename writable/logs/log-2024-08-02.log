@@ -1,0 +1,277 @@
+ERROR - 2024-08-02 01:13:52 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:14:45 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:14:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:15:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:15:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:16:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'trademap', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-02 01:17:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'trademap', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-02 01:18:51 --> Error: Class "Dotenv\Dotenv" not found
+[Method: CLI, Route: migrate]
+in APPPATH\Config\Database.php on line 196.
+ 1 SYSTEMPATH\Config\Factories.php(235): Config\Database->__construct()
+ 2 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Database', [])
+ 3 SYSTEMPATH\Config\Factories.php(188): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 4 SYSTEMPATH\Common.php(207): CodeIgniter\Config\Factories::get('config', 'Config\\Database')
+ 5 SYSTEMPATH\Database\MigrationRunner.php(144): config('Config\\Database')
+ 6 SYSTEMPATH\Config\Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 9 SYSTEMPATH\Config\Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::migrations()
+11 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+12 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::get('migrations')
+13 SYSTEMPATH\Commands\Database\Migrate.php(70): service('migrations')
+14 SYSTEMPATH\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([])
+15 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [])
+16 SYSTEMPATH\Boot.php(351): CodeIgniter\CLI\Console->run()
+17 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+18 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2024-08-02 01:19:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'trademap', 3306, '', 0)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'trademap' in D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 D:\xampp\htdocs\glaiton\trademap-ci\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 D:\xampp\htdocs\glaiton\trademap-ci\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
